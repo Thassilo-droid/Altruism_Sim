@@ -7,5 +7,5 @@ sex: bool
 apetite: int
 rage: int
 size: int
-strenght: int
+strentgh: int
 ----------------
