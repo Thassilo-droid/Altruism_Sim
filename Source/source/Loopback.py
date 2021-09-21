@@ -7,14 +7,12 @@ import os
 
 class Loopback:
 
-    def __init__(self, timeout=0.6):
-        #timeout defines time for Timer
-        self.timeout = timeout
+    def __init__(self, timer):
+
         #making timer instance
-        self.timer = Timer(timeout)
+        self.timer = timer
 
     def draw(self):
-        self.timer.clock_pulse()
         #if timer gives pulse
         if self.timer.time_pulse_set():
             #all drawing

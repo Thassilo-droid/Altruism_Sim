@@ -18,9 +18,10 @@ class MAIN:
         #getting environments
         self.envs = []
         #loopback for drawing
-        self.loopback = Loopback()
+
         #setting timer
         self.timer = Timer(0.1)
+        self.loopback = Loopback(self.timer)
         #mode for init
         self.mode = 0
 
