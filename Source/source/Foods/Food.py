@@ -9,7 +9,7 @@ class Food():
 
     """
 
-    superclass of Apple, etc.
+    superclass of Apple, Mango, etc.
     """
 
     def __init__(self, species, nutrients, age, condition):
