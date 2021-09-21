@@ -1,0 +1,8 @@
+class Loopback:
+-----------------
+timer: Timer
+-----------------
+clear_screen(): void
+draw(): void
+environment_draw(Environment env): void
+-----------------
