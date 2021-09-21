@@ -19,6 +19,5 @@ class Food():
         self.condition = condition
 
     def getspoiled(self):
-
         if age > 5:
-            condtion = ["spoiled"] 
+            condtion = {"spoiled": 0}
