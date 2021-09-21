@@ -1,0 +1,10 @@
+class Timer:
+------------------
+frequency: int
+time_puls: bool
+last_time: float
+current_time: float
+-------------------
+clock_pulse(): void
+time_pulse_set(): bool
+-------------------
