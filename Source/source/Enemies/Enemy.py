@@ -12,11 +12,12 @@ class Enemy():
     superclass of Panther, etc.
     """
 
-    def __init__(self, species, name, age, sex, apetite, rage, size, strength):
+    def __init__(self, species, name, age, sex, appetite, rage, size, strength):
         self.species = species
+        self.name = name
         self.age = age
         self.sex = sex
-        self.apetite = apetite
+        self.appetite = appetite
         self.rage = rage
         self.size = size
         self.strength = strength
@@ -25,4 +26,4 @@ class Enemy():
         """
         had a succesfull hunt, as conclusion the apetite gets lower
         """
-        self.apetite -= 1
+        self.appetite -= 1

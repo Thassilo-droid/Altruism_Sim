@@ -7,6 +7,4 @@ Class FoodResource
 
 class FoodResource():
 
-    """
-
-    superclass of 
+    pass
