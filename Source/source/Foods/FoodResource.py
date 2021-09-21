@@ -12,4 +12,4 @@ class FoodResource():
 
     """
 
-    def __init__(self, FoodQuantity, Foods, EnemyExistence, ):
+    def __init__(self, FoodQuantity, Foods, EnemyExistence, Enemy):
