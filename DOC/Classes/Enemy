@@ -1,0 +1,11 @@
+class Enemy
+----------------
+species: str
+name: str
+age: int
+sex: bool
+apetite: int
+rage: int
+size: int
+strenght: int
+----------------
