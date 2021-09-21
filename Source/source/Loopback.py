@@ -20,7 +20,7 @@ class Loopback:
         self.write_table(["Altruism Simulator v1.0", "press q to exit"])
 
 
-    def write_table(self, sentences):
+    def write_table(self, sentences, offset = 0):
         """
         writes sentences into a table
         """
@@ -34,13 +34,16 @@ class Loopback:
                 most_length = len(el)
         #increasing for start
         most_length += 1
-        print('-'*most_length)
+        #initializing table
+        print(" "*offset+'-'*most_length)
+        #printing table
         for el in sentences:
-            print("|", end="")
+            #formatting
+            print(" "*offset+"|", end="")
             print(el, end="")
             print(" "*(most_length-len(el)-1), end="")
             print("|")
-            print("-"*most_length)
+            print(" "*offset+"-"*most_length)
 
 
 
