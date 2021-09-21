@@ -17,3 +17,8 @@ class Food():
         self. nutrients = nutrients
         self.age = age
         self.condition = condition
+
+    def getspoiled(self):
+
+        if age > 5:
+            condtion = ["spoiled"] 
