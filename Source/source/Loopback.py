@@ -7,22 +7,20 @@ import os
 
 class Loopback:
 
-    def __init__(self, timer):
+    def __init__(self):
+        pass
 
-        #making timer instance
-        self.timer = timer
 
     def draw(self):
-        #if timer gives pulse
-        if self.timer.time_pulse_set():
-            #all drawing
-            self.clear_screen()
-            self.environment_draw(None)
+        self.environment_draw(None)
 
 
     def environment_draw(self, env):
         #not yet defined
         print("Altruism Simulator v1.0")
+        print("Exit with q")
+
+    def draw_underscore(self, length, from=)
 
     def clear_screen(self):
         """

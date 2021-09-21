@@ -20,14 +20,16 @@ class MAIN:
         #loopback for drawing
 
         #setting timer
-        self.timer = Timer(0.1)
-        self.loopback = Loopback(self.timer)
+        self.timer = Timer(0.4)
+        self.loopback = Loopback()
+
         #mode for init
         self.mode = 0
 
 
     def draw(self):
         #calls loopback.draw
+        self.loopback.clear_screen()
         self.loopback.draw()
 
     def callback(self):
