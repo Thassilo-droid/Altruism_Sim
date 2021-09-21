@@ -13,4 +13,9 @@ class Aleel(ABC):
     """
 
     def __init__(self, identity, strength, fertability, \
-                cowardness, hp, fed_scale,):
+                cowardness, hp, fed_scale, is_fed, is_alive\
+                has_reproduced, has_partner):
+        #initializing everything
+        self.identity = identity
+        self.strength = strength
+        self.fertability = fertability
