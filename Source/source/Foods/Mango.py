@@ -8,4 +8,4 @@ class Mango(Food):
     def getspoiled(self):
         if age >= 20:
             condition = {"spoiled": 0}
-            nutrients -= 0.5*nutrients
+            nutrients -= 0.9*nutrients

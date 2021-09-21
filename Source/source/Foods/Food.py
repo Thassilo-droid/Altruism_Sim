@@ -16,4 +16,4 @@ class Food():
         self.species = species
         self. nutrients = nutrients
         self.age = age
-        self.condition = condition
+        self.condition = condition # 
