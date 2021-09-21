@@ -7,4 +7,9 @@ Class FoodResource
 
 class FoodResource():
 
-    pass
+    """
+
+
+    """
+
+    def __init__(self, FoodQuantity, Foods, EnemyExistence, ):

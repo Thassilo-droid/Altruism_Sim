@@ -3,7 +3,7 @@ class FoodResource
 FoodQuantity: int
 Foods: {str: int}
 EnemyExistence: bool
-enemys: Enemy[]
+enemy: Enemy[]
 free_places: int
 places: int
 ----------------
