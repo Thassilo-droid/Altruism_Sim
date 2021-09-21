@@ -4,6 +4,16 @@ V.1.0
 Class Food
 """
 
+
 class Food():
 
-    def __init__(self)
+    """
+
+    superclass of Apple, etc.
+    """
+
+    def __init__(self, species, nutrients, age, condition):
+        self.species = species
+        self. nutrients = nutrients
+        self.age = age
+        self.condition = condition
