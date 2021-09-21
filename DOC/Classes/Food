@@ -3,5 +3,5 @@ class Food
 species: str
 nutrients: int
 age: int
-condition: {str: int}
+condition: [str]
 ----------------
