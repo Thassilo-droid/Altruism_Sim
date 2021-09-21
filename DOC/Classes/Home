@@ -8,3 +8,10 @@ has_inside: Aleel[]
 add_inhabitant(Aleel a): void
 remove_inhabitant(Aleel b): void
 ---------------
+
+class Cave<Home>:
+-----------------
+--
+-----------------
+--
+-----------------

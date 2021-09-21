@@ -11,19 +11,20 @@ is_alive: bool
 has_reproduced: bool
 has_partner: bool
 -----------------
-eat(food): void
-reproduce(other): void
-search_food(): void
+eat(food): bool
+reproduce(other): bool
+search_food(food_resources): bool
+find_home(Home homes[]): bool
 ---------------------
 
-class Normal<Aleel>:
+class NormalAleel<Aleel>:
 ---------------------
 --
 ---------------------
 --
 ---------------------
 
-class GreenBeard<Aleel>:
+class GreenBeardAleel<Aleel>:
 -----------------------
 likelyness_to_help: int # 1-100%
 -----------------------

@@ -1,0 +1,21 @@
+class Environment:
+-------------------
+all_aleels: Aleel[]
+all_aleels_count: int
+normal_aleels: NormalAleel[]
+normal_aleels_count: int
+green_beard_aleels: GreenBeardAleel[]
+green_beard_aleels_count: int
+
+food_resources: FoodResource[]
+homes: Home[]
+------------------
+kill_starving_aleels(): bool
+kill_all_aleels(): bool
+
+invoke_food_search_process(): void
+invoke_food_action_process(): void
+invoke_home_finding_process(): void
+
+get_data(): dict{}
+------------------
