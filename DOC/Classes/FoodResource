@@ -1,0 +1,14 @@
+class FoodResource
+----------------
+FoodQuantity: int
+Foods: {str: int}
+EnemyExistence: bool
+enemys: Enemy[]
+free_places: int
+places: int
+----------------
+
+def pickFruit
+----------------
+return Food
+----------------
