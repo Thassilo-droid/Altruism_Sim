@@ -1,11 +1,11 @@
 from source.Foods.Food import Food
 
-class Apple(Food):
+class Mango(Food):
 
     def __init__(self):
-        super().__init__("Apple", 10, 0, {"": None})
+        super().__init__("Mango", 20, 0, {"": None})
 
     def getspoiled(self):
-        if age >= 30:
+        if age >= 20:
             condition = {"spoiled": 0}
             nutrients -= 0.5*nutrients
