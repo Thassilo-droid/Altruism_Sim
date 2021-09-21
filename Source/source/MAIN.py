@@ -1,6 +1,10 @@
 """
 defines class for management
 """
+#import dependencies
+from source.Loopback import Loopback
+from source.Timer import Timer
+
 
 class MAIN:
 
@@ -14,14 +18,19 @@ class MAIN:
         #getting environments
         self.envs = []
         #loopback for drawing
-        self.loopback = None
+        self.loopback = Loopback()
+        #setting timer
+        self.timer = Timer(0.1)
         #mode for init
         self.mode = 0
 
+
     def draw(self):
         #calls loopback.draw
-        pass
+        self.loopback.draw()
 
     def callback(self):
-        #not yet deined
-        pass
+        #getting and setting clock pulse
+        self.timer.clock_pulse()
+        if self.timer.time_pulse_set():
+            self.draw()
