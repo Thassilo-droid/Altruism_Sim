@@ -1,0 +1,15 @@
+Classes:
+
+Alleel -> Normal, Green Beards
+
+FoodResource -> Trees
+Food: Apple
+Enemy->Predator
+
+Home -> Cave
+
+Darstellung
+
+MAIN
+Timer
+Loopback

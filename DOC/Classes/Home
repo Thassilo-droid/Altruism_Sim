@@ -1,0 +1,10 @@
+class Home:
+---------------
+can_accommodate: bool
+places: int
+comfortability: int
+has_inside: Aleel[]
+---------------
+add_inhabitant(Aleel a): void
+remove_inhabitant(Aleel b): void
+---------------

@@ -1,0 +1,30 @@
+class Aleel:
+----------------
+indentity: str
+strength: int
+fertability: int
+cowardness: int
+hp: int
+fed_scale: int
+is_fed: bool
+is_alive: bool
+has_reproduced: bool
+has_partner: bool
+-----------------
+eat(food): void
+reproduce(other): void
+search_food(): void
+---------------------
+
+class Normal<Aleel>:
+---------------------
+--
+---------------------
+--
+---------------------
+
+class GreenBeard<Aleel>:
+-----------------------
+likelyness_to_help: int # 1-100%
+-----------------------
+warn(other): bool
