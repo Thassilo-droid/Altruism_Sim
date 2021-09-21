@@ -21,4 +21,8 @@ class Enemy():
         self.size = size
         self.strength = strength
 
-    def attack
+    def succesfullhunt(self):
+        """
+        had a succesfull hunt, as conclusion the apetite gets lower
+        """
+        self.apetite -= 1
