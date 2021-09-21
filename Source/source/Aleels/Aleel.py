@@ -26,6 +26,8 @@ class Aleel(ABC):
         self.is_alive = is_alive
         self.has_reproduced = has_reproduced
         self.has_partner = has_partner
+        #partner for reproduction
+        self.partner = None
 
     def eat(self, food):
         """
@@ -37,12 +39,36 @@ class Aleel(ABC):
         self.is_fed = True
 
     def reproduce(self, other):
-        #nothing yet to be defined
-        pass
+        """
+        checking own parameters for reproduction
+        """
+        #checking if not already has partner
+        if not self.has_partner:
+            #setting partner
+            self.has_partner = True
+            self.partner = other
 
-    def search_food(self, food_resource):
-        #not defined yet
-        pass
+        #starting reproducing process
+        self.has_reproduced = True
+
+        return self.get_reproduced_type()
+
+    def get_reproduced_type(self):
+        """
+        gives back a type for reproduction.
+
+        Necessary bc almost every aleel is different
+        """
+        return None
+
+    def obtain_foot(self, foodresource):
+        """
+        obtains food from the resource
+        """
+        gotten = foodresource.givefood()
+        self.eat(gotten)
+
+
 
     def find_home(self, homes):
         #not yet defined
