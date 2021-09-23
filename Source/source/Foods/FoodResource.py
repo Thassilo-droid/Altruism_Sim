@@ -34,7 +34,8 @@ class FoodResource():
         while self.Foods[choice] <= 0 and max_rot > 0:
             keys.remove(choice)
             choice = random.choice(keys)
-            max_rot -= 1
+            if self.Foods[choice] > 0:
+                max_rot -= 1
         #minus
         self.Foods[choice] -= 1
         #
