@@ -27,9 +27,9 @@ class Enemy():
         self.strength += random.choice(1, 7)
         other.strength += random.choice(1, 7)
         if self.strenght > other.strength:
-            enemykillsaleel = true
+            return True
         else:
-            enemykillsaleel = false
+            return False
 
     def succesfullhunt(self):
         """
