@@ -9,6 +9,12 @@ rage: int
 size: int
 strength: int
 ----------------
-
+fightwithaleel(): void
+----------------
+succesfullhunt(): void
+----------------
 
 class Panther<Enemy>
+----------------
+
+----------------

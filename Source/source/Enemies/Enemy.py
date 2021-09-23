@@ -43,4 +43,5 @@ class Enemy():
         """
         had a succesfull hunt, as conclusion the apetite gets lower
         """
-        self.appetite -= 1
+        if True:
+            self.appetite -= 1
