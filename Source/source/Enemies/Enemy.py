@@ -24,7 +24,7 @@ class Enemy():
         self.strength = strength
 
     def fightwithaleel(self, other):
-        self.strenght += random.choice(1, 7)    """Enemy rolls Dice int gets addded to Strenght """
+        self.strength += random.choice(1, 7)    """Enemy rolls Dice int gets addded to Strenght """
         other.strength += random.choice(1, 7)   """Aleel rolls Dice int gets added to Strength """
         if self.strenght > other.strength:      """ """
             enemykillsaleel = true              """ """
