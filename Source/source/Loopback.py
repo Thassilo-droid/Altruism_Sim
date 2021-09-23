@@ -2,22 +2,28 @@
 class for periodic drawing
 """
 from source.Timer import Timer
+from source.Screen import Screen
 import keyboard
 import os
 
 class Loopback:
 
     def __init__(self):
-        pass
+        #if screen should get cleared
+        self.noclear = False
+        #screens
+        self.screens = [
+        Screen(self.draw_first, lambda: keyboard.is_pressed("a"), False),
+        Screen(lambda: print("Hallo"), lambda: 0, True)
+        ]
+        #current_screen
+        self.current_screen = self.screens[0]
 
 
     def draw(self):
-        self.environment_draw(None)
+        if not self.noclear:
+            self.current_screen.draw_method()
 
-
-    def environment_draw(self, env):
-        #not yet defined
-        self.write_table(["Altruism Simulator v1.0", "press q to exit"])
 
 
     def write_table(self, sentences, offset = 0):
@@ -45,6 +51,24 @@ class Loopback:
             print("|")
             print(" "*offset+"-"*most_length)
 
+    def draw_first(self):
+        """
+        Method for drawing first screen
+        """
+        self.clear_screen()
+        self.write_table(["Altruism Simulator v1.0", "press q to exit"])
+
+    def go_on(self):
+        """
+        goes on with screen
+        """
+        try:
+            self.current_screen = self.screens[self.screens.index(self.current_screen)+1]
+            self.noclear = self.current_screen.noclear
+            self.clear_screen()
+            self.current_screen.draw_method()
+        except Exception:
+            pass
 
 
     def clear_screen(self):
