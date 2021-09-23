@@ -24,14 +24,6 @@ class Enemy():
         self.strength = strength
 
     def fightwithaleel(self, other):
-<<<<<<< HEAD
-        self.strength += random.choice(1, 7)    """Enemy rolls Dice int gets addded to Strenght """
-        other.strength += random.choice(1, 7)   """Aleel rolls Dice int gets added to Strength """
-        if self.strenght > other.strength:      """ """
-            enemykillsaleel = true              """ """
-        else:                                   """ """
-            enemykillsaleel = false             """ """
-=======
         """
         -> Später kampf erhöht Stärke
         """
@@ -43,7 +35,7 @@ class Enemy():
             return True
         else:
             return False
->>>>>>> eb4967bc30dc78094ceeab57d1d265448779860b
+
 
     def succesfullhunt(self):
         """
