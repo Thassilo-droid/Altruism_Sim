@@ -24,6 +24,9 @@ class Enemy():
         self.strength = strength
 
     def fightwithaleel(self, other):
+        """
+        -> Später kampf erhöht Stärke
+        """
         estrength = self.strength
         ostrength = other.strength
         estrength += random.choice(1, 7)
