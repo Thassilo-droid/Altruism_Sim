@@ -65,11 +65,23 @@ class Loopback:
         abstand = 60
         length = 100
         height = 20
-        print(colorama.Fore.GREEN+" "*abstand+"+"*length)
-        for t in range(height):
-            print(" "*abstand+"+"+" "*(length-2)+"+")
-        print(colorama.Fore.GREEN+" "*abstand+"+"*length)
-        print(welcome)
+        zeichen = "|"
+        ic_bet = " "
+        z2 = "_"
+        print(colorama.Fore.GREEN+" "*(abstand+1)+z2*(length-2))
+        #count for ws
+        wcount = 1
+        for t in range(height-1):
+            if t >= height//2-1 and wcount < 5:
+                wtd = globals()["w"+str(wcount)]
+                incept = ic_bet*(((length-2)-len(wtd))//2)+wtd+ic_bet*(((length-2)-len(wtd))//2+1)
+                wcount += 1
+            else:
+
+                incept = " "*(length-2)
+            print(" "*abstand+zeichen+incept+zeichen)
+        incept = "_"*(length-2)
+        print(" "*abstand+zeichen+incept+zeichen)
         print(colorama.Fore.RESET)
 
 

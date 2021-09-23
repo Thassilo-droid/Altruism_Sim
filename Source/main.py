@@ -7,10 +7,13 @@ import os
 
 p = False
 
+keyboard.press("f11")
+
 main = MAIN()
 
 while not p:
-    p = keyboard.is_pressed("q")
+
+    p = keyboard.is_pressed("q")        
     main.callback()
 
 os.system("cls")
