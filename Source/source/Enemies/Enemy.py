@@ -24,17 +24,19 @@ class Enemy():
         self.strength = strength
 
     def fightwithaleel(self, other):
-        """
-        -> Später kampf erhöht Stärke
-        """
+
         estrength = self.strength
         ostrength = other.strength
+
         estrength += random.choice(1, 7)
         ostrength += random.choice(1, 7)
         if estrength > ostrength:
             return True
         else:
             return False
+        """
+        -> Später kampf erhöht Stärke
+        """
 
 
     def succesfullhunt(self):
