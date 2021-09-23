@@ -9,3 +9,6 @@ rage: int
 size: int
 strength: int
 ----------------
+
+
+class Panther<Enemy>

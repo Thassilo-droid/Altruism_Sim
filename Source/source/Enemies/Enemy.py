@@ -4,6 +4,7 @@ V 1.0
 Class Enemy
 """
 
+import random
 
 class Enemy():
 
@@ -21,6 +22,14 @@ class Enemy():
         self.rage = rage
         self.size = size
         self.strength = strength
+
+    def fightwithaleel(self, other):
+        self.strenght += random.choice(1, 7)
+        other.strength += random.choice(1, 7)
+        if self.strenght > other.strength:
+            enemykillsaleel = true
+        else:
+            enemykillsaleel = false
 
     def succesfullhunt(self):
         """
