@@ -10,10 +10,11 @@ is_fed: bool
 is_alive: bool
 has_reproduced: bool
 has_partner: bool
+partner: Aleel
 -----------------
 eat(food): bool
-reproduce(other): bool
-search_food(food_resources): bool
+reproduce(other): Aleel#gives back new aleel type
+obtain_food(foodresources): void # gets food from foodresource
 find_home(Home homes[]): bool
 ---------------------
 

@@ -51,15 +51,7 @@ class Aleel(ABC):
         #starting reproducing process
         self.has_reproduced = True
 
-        return self.get_reproduced_type()
-
-    def get_reproduced_type(self):
-        """
-        gives back a type for reproduction.
-
-        Necessary bc almost every aleel is different
-        """
-        return None
+        return type(self)
 
     def obtain_foot(self, foodresource):
         """

@@ -3,8 +3,6 @@ class Main:
 envs: Environment[]
 loopback: Loopback
 timer: Timer
-
-
 mode: [0, 1, 2]: #0: full simulation;1 iterable simulation;2stopabble simulation
 ----------------
 draw()
