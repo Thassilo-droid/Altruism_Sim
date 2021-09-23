@@ -3,15 +3,21 @@ class Food
 species: str
 nutrients: int
 age: int
-condition: int
+condition: string
+matured_after: int
 spoiled_after: int
+----------------
+getmature(): void
 ----------------
 getspoiled(): void
 ----------------
 
 class Apple<Foods>
-------------------
+-----------------
 --
-------------------
-getmature(): void
-------------------
+-----------------
+
+class Mango<Foods>
+-----------------
+--
+-----------------

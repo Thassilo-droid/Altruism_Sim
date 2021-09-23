@@ -16,10 +16,16 @@ class Food():
         self.species = species
         self.nutrients = nutrients
         self.age = age
-        self.condition = condition #
+        self.condition = condition
+        self.matured_after = matured_after
         self.spoiled_after = spoiled_after
+
+    def getmature(self):
+        if self.age >= self.matured_after:
+            self.condtion = "matured"
+            self.nutrients += 2*self.nutrients
 
     def getspoiled(self):
         if self.age >= self.spoiled_after:
-            self.condition = {"spoiled": 0}
+            self.condition = "spoiled"
             self.nutrients -= 0.9*self.nutrients
