@@ -1,4 +1,7 @@
 class Environment:
+
+--
+types: str[] #list with all available types
 -------------------
 all_aleels: Aleel[]
 all_aleels_count: int
@@ -13,9 +16,10 @@ homes: Home[]
 kill_starving_aleels(): bool
 kill_all_aleels(): bool
 
-invoke_food_search_process(): void
-invoke_food_action_process(): void
-invoke_home_finding_process(): void
+invoke_food_search_process(): dict
+invoke_food_action_process(): dict
+invoke_home_finding_process(): dict
+invoke_reproduction_resource(): dict
 
 get_data(): dict{}
 ------------------
