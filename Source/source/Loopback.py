@@ -5,6 +5,8 @@ from source.Timer import Timer
 from source.Screen import Screen
 import keyboard
 import os
+import colorama
+colorama.init()
 
 class Loopback:
 
@@ -57,6 +59,12 @@ class Loopback:
         """
         self.clear_screen()
         self.write_table(["Altruism Simulator v1.0", "press q to exit"])
+        for t in range(20):
+            print()
+        abstand = 60
+        print(colorama.Fore.GREEN+" "*abstand+"+"*100)
+        print(colorama.Fore.RESET)
+
 
     def go_on(self):
         """
