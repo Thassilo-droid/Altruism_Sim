@@ -24,7 +24,7 @@ class Enemy():
         self.strength = strength
 
     def fightwithaleel(self, other):
-        self.strenght += random.choice(1, 7)
+        self.strength += random.choice(1, 7)
         other.strength += random.choice(1, 7)
         if self.strenght > other.strength:
             enemykillsaleel = true
