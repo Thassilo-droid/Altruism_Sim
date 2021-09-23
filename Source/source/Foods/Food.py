@@ -14,7 +14,7 @@ class Food():
 
     def __init__(self, species, nutrients, age, condition, spoiled_after):
         self.species = species
-        self. nutrients = nutrients
+        self.nutrients = nutrients
         self.age = age
         self.condition = condition #
         self.spoiled_after = spoiled_after

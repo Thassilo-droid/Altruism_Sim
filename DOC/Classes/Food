@@ -4,4 +4,14 @@ species: str
 nutrients: int
 age: int
 condition: int
+spoiled_after: int
 ----------------
+getspoiled(): void
+----------------
+
+class Apple<Foods>
+------------------
+--
+------------------
+getmature(): void
+------------------
