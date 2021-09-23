@@ -6,6 +6,7 @@ from source.Screen import Screen
 import keyboard
 import os
 import colorama
+from source.ascii.startscreen import *
 colorama.init()
 
 class Loopback:
@@ -59,10 +60,16 @@ class Loopback:
         """
         self.clear_screen()
         self.write_table(["Altruism Simulator v1.0", "press q to exit"])
-        for t in range(20):
+        for t in range(15):
             print()
         abstand = 60
-        print(colorama.Fore.GREEN+" "*abstand+"+"*100)
+        length = 100
+        height = 20
+        print(colorama.Fore.GREEN+" "*abstand+"+"*length)
+        for t in range(height):
+            print(" "*abstand+"+"+" "*(length-2)+"+")
+        print(colorama.Fore.GREEN+" "*abstand+"+"*length)
+        print(welcome)
         print(colorama.Fore.RESET)
 
 
