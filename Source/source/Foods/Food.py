@@ -5,7 +5,7 @@ Class Food
 """
 
 
-class Food():
+class Food:
 
     """
 
