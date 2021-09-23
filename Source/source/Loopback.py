@@ -63,8 +63,11 @@ class Loopback:
         goes on with screen
         """
         try:
+            #switching current screen
             self.current_screen = self.screens[self.screens.index(self.current_screen)+1]
+            #setting noclear
             self.noclear = self.current_screen.noclear
+            #clearing and drawing
             self.clear_screen()
             self.current_screen.draw_method()
         except Exception:
